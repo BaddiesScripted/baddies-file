@@ -16,7 +16,7 @@ task.spawn(function()
     end
 end)
 
--- Load Baddies
+-- Load your main Baddies script
 task.spawn(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BaddiesScripted/baddies-file/refs/heads/main/baddies", true))()
 end)
